@@ -47,7 +47,14 @@ main {
 }
 
 img {
-  margin: 40px 8px 0px 8px
+  margin: 30px 8px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+img:hover {
+	border: 1px solid #00a6b3;
+	border-radius: 4px;
 }
 
 h2 {
@@ -57,13 +64,39 @@ h2 {
 	font-weight: 600;
 	font-size: 20px;
 	text-transform: uppercase;
+	margin-top: 20px;
 }
 
+h3 {
+	font-family: Raleway, sans-serif;
+    font-size: 22px;
+    color: #0D2C40;
+    margin: 20px 0px;
+    text-transform: uppercase;
+}
 p {
 	font-family: "Droid Serif", serif;
 	line-height: 26px;
 	font-size: 18px;
 }
+
+button {
+  padding: 8px;
+  margin: 10px;
+  background-color: #f15b31;
+  color: white;
+  border-radius: 6px;
+  font-size: 14px;
+  font-family: Raleway, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: 2px solid transparent;
+}
+
+button:hover {
+	border: 2px solid #00a6b3;
+}
+
 .copyright {
 	font-family: Raleway, sans-serif;
 	float: left;
@@ -80,7 +113,7 @@ p {
 }
 
 .clearfix:after {
-	visability: hidden;
+	visibility: hidden;
 	display: block;
 	content: " ";
     clear: both;

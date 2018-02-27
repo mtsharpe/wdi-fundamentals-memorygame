@@ -14,32 +14,33 @@
   
   <nav>
   	<a href="#instructions">Instructions</a>
-    <a href="#">Game</a>
+    <a href="#game">Game</a>
   </nav>
 
   <h2 id="instructions">Instructions</h2>
   
   <main>
   <p>Concentration, also known as Match Match, Memory, Pelmanism, Shinkei-suijaku, Pexeso or simply Pairs, is a card game in which all of the cards are laid face down on a surface and two cards are flipped face up over each turn. The object of the game is to turn over pairs of matching cards.</p>
+
+  <!--<h2 id="game">Game</h2>
+  <p>Test and train your memory skills with this fun and addictive game!<br> You'll score a point for each match and a point for each miss. Good luck!</p>-->
   
-  <div>
-  	<img src="images/back.png" alt="Queen of Diamonds">
+  
+  <div id="game-board" class="board clearfix"></div>
+  	<!-- <img src="images/back.png" alt="Queen of Diamonds">
   	<img src="images/back.png" alt="Queen of Hearts">
   	<img src="images/back.png" alt="King of Diamonds">
-  	<img src="images/back.png" alt="King of Hearts">
-  </div>
+  	<img src="images/back.png" alt="King of Hearts"> -->
 
-<!--
-<h2>Game</h2>
-  <p>Test and train your memory skills with this fun and addictive game! The game Concentration can help increase concentration (duh!), boost your brain, stimulate your mind, improve creativity and increase short term memory. But most of all, it's fun!</p>
-  <h3>About me</h3>
-  <p>I am a beginning web developer tasked with creating a memory card game.</p><br>
-  <p>Follow along on my journey via <a href="http://twitter.com/mattsharpe72?lang=en" target="_blank">Twitter</a>.</p>
- --> 
-  </main>
+<h3>Matches: <span id="matches">0</span>&emsp;|&emsp;Misses: <span id="misses">0</span></h3>
+
+<button type="button" id="button">Reset Cards</button>
+<button type="button" id="shuffle">Rearrange Cards</button>
+<button type="button" id="newScore">Reset Score</button>
+</main>
 
   <footer class="clearfix">
-  	<p class="copyright">Copyright 2017</p>
+  	<p class="copyright">&copy; Copyright 2017</p>
   	<p class="message">Created with &hearts; by <span class="name">GA</span></p>
   </footer>
 
